@@ -1,0 +1,107 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --title:  orangered;
+    --title2: rgb(222, 65, 7);
+    --menu: rgb(238, 144, 50);
+}
+
+body {
+    background-color: #f4f4f4;;
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: var(--title);
+}
+
+nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: grey;
+}
+
+nav ul {
+    display: flex; 
+    list-style-type: none; 
+    padding: 3px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--menu);
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/*descer footer pro final da pagina*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;    
+}
+
+
+#bimg {
+    background-color: purple;
+    padding: 5px;
+    width: 20%;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#bimg:hover {
+    background-color: #ff00c3;
+}
+
+h3 {
+    margin-top: 40px;
+    color: var(--title2);
+}
+
+h2 {
+    color: var(--title2);
+}
+
+img {
+    max-width: 800px;
+    width: 100%; /*yes, giant images*/
+    margin: auto;
+}
+
+.highlight {
+    color: orangered;
+    font-weight: bold;
+}
+
