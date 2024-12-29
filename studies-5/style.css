@@ -1,0 +1,35 @@
+h1, h2, p {
+    text-align: center;
+    color: rgb(216, 205, 205);
+}
+
+h3 {
+    color: rgb(211, 93, 34);
+    padding-top: 20px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(37, 35, 35);
+}
+
+hr {
+    color: black;
+}
+
+.texts {
+    color: rgb(7, 202, 202);
+}
+
+#basic {
+    color: rgb(107, 218, 181);
+}
+
+#intermediate {
+    color: rgb(123, 39, 201);
+}
+
+#advanced {
+    color: rgb(211, 180, 3);
+}

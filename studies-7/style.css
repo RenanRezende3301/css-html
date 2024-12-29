@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*menu UL um ao lado do outro*/
+ul {
+    list-style-type: none; 
+    padding: 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    display: inline; 
+    margin-right: 10px; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+#e1 {
+   background-color: blue; 
+}
+
+#e2 {
+    background-color: red; 
+}
+
+#e3 {
+    background-color: green; 
+}
+
+#e1:hover {
+    background-color: lightblue
+}
+
+#e2:hover {
+    background-color: pink
+}
+
+#e3:hover {
+    background-color: lightgreen
+}
+
+#secret {
+    background-color: white;
+    color: white;
+    text-align: center;
+    width: 100px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    font-family: cursive;
+    margin-top: 200px;
+
+}
+
+#secret:hover {
+    color: black;
+    background-color: pink;
+}

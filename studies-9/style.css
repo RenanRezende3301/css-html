@@ -1,0 +1,39 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --redtext: darkred;
+    --greentext: darkgreen;
+    --bluetext: darkblue;
+    --centralize: center;
+
+}
+
+main {
+    border: 2px solid black;
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: var(--centralize);
+}
+
+h2 {
+    margin-top: 50px;
+
+}
+
+#txt1 {
+    color: var(--redtext);
+}
+
+#txt2 {
+    color: var(--greentext);
+}
+
+#txt3 {
+    color: var(--bluetext);
+}
