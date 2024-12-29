@@ -1,2 +1,2 @@
 # css-html
- my html and css studies
+I'm learning HTML and CSS
