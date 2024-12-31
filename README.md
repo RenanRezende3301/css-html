@@ -1,6 +1,8 @@
 # css-html
 I'm learning HTML and CSS
 
+In the link below, all the HTML 5 and CSS 3 exercises I have done so far are available.
+
 <style> 
 
     a {
