@@ -1,0 +1,38 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-image: url('img/pattern004.png');
+    background-repeat: repeat-x;
+}
+
+main {
+    border: 2px solid black;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+div.square {
+    border: 3px solid black;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+div#sq1 {
+    background-color: blueviolet;
+}
+
+div#sq2 {
+    background-image: linear-gradient(to bottom, red, orange, yellow);
+}
+
+div#sq3 {
+    background-image: url('img/pattern003.png');
+}
