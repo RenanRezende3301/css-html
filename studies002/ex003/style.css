@@ -4,35 +4,19 @@
 }
 
 body {
-    background-image: url('img/wallpaper002.jpg');   
+    height: 97vh;
+    background-color: black;
+    background-image: url('img/wallpaper002.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-div.square {
-    border: 3px solid black;
-    height: 100px;
+main {
+    background-color: white;
+    width: 80%;
+    padding: 10px;
     margin: auto;
-    border-radius: 3px;
-    background-image: url('img/wallpaper003.jpg');
-    width: 90vh;
-    margin-top: 5px;
-}
-
-div#sq1 {
-    background-position: left top;
-}
-
-div#sq2 {
-    background-position: left bottom;
-}
-
-div#sq3 {
-    background-position: center;
-}
-
-div#sq4 {
-    background-position: right top;
-}
-
-div#sq5 {
-    background-position: right bottom;
+    border: solid 3px black;
+    border-radius: 5px;
 }
