@@ -22,12 +22,13 @@
 
     li {
         list-style: none;
-        display: felx;
         text-align: center;
+
     }
 
     ul {
         padding: 0;
+        margin-bottom: 20px;
     }
 
     footer {
