@@ -1,0 +1,35 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: black url('img/wallpaper002.jpg') center center no-repeat fixed;
+    background-size: cover;
+
+
+   /*>
+        background-image: url(img/wallpaper002.jpg) ;       
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 97vh;
+        background-color: black;
+        background-attachment: fixed;
+   /*
+    
+    /*
+    ShortHand - background
+       color > image > position > repeat >  attachment
+    */
+}
+
+main {
+    border: solid 2px black;
+    padding: 20px;
+    margin: auto;
+    max-width: 600px;
+    background-color: white;
+    border-radius: 5px;
+}
+

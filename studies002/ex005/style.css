@@ -1,0 +1,79 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    background-color: white;
+    max-width: 600px;
+    padding: 10px;
+
+    margin: auto;
+    border-radius: 5px;
+    border: solid black 3px;
+}
+
+#container {
+    position: relative;
+
+    height: 96vh;
+    padding: 10px;
+    background-color: yellow;
+    background-image: url(img/wallpaper002.jpg);
+    background-size: 100% 100%;
+}
+
+#content {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: solid black 4px;
+    border-radius:  50%;
+    text-align: center;
+    text-decoration: underline;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle1 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle2 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.circle3 {
+    height: 50px;
+    width: 50px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
