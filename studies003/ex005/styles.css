@@ -1,0 +1,299 @@
+/* Paleta de cores em tons terrosos e quentes:
+   --brown: #5B3926 (marrom escuro)
+   --beige: #F8F5F2 (bege clarinho)
+   --cream: #E4D5B7 (creme suave)
+   --golden: #C09368 (dourado suave)
+   --dark-brown: #3E2723 (marrom mais escuro)
+*/
+
+:root {
+    --brown: #5B3926;
+    --beige: #F8F5F2;
+    --cream: #E4D5B7;
+    --golden: #C09368;
+    --dark-brown: #3E2723;
+}
+
+/* Configurações gerais e reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--beige);
+  color: var(--brown);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  padding-bottom: 30px;
+}
+
+/* Links básicos */
+a {
+  text-decoration: none;
+  color: var(--brown);
+  transition: color 0.3s ease;
+}
+
+/* Cabeçalho fixo e estilização */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--golden);
+  padding: 5px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 140px;
+  margin-right: 20px;
+}
+
+/* Menu centralizado */
+nav {
+  flex: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s, transform 0.3s;
+  font-size: 0.9rem;
+}
+
+nav ul li a:hover {
+  color: var(--dark-brown);
+  transform: scale(1.1);
+}
+
+/* Seção principal (Hero) */
+.hero {
+  position: relative;
+  background: url('img/paoback.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Título diferenciado */
+#titudif {
+  color: white;
+}
+
+/* Camada de overlay */
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Botão padrão */
+.btn {
+  background: var(--brown);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--dark-brown);
+  transform: scale(1.05);
+}
+
+/* Estrutura geral das seções */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: var(--brown);
+}
+
+.sobre,
+.redes-sociais,
+.localizacao,
+.contato {
+  background: #fff;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+}
+
+#sobrehisto {
+    text-align: center;
+}
+
+/* Grade de redes sociais (2x2, total 4 colunas) */
+.redes-sociais .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-items: center;
+}
+
+.rede-social {
+  background: var(--cream);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.rede-social:hover {
+  transform: translateY(-5px);
+}
+
+.rede-social img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.rede-social h3 {
+  margin: 10px 0;
+  color: var(--brown);
+  font-size: 1.1rem;
+}
+
+/* Estilos da seção de localização */
+.localizacao iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid var(--golden);
+}
+
+.endereco {
+  padding-bottom: 20px;
+}
+
+#titu {
+  padding-top: 20px;
+}
+
+/* Formulário de contato */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background: var(--brown);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: var(--dark-brown);
+  transform: scale(1.05);
+}
+
+/* Rodapé do site */
+footer {
+  background: var(--brown);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .redes-sociais .grid {
+    grid-template-columns: 1fr;
+  }
+}
