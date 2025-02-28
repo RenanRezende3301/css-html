@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="cadastro.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1>FORMS</h1>
+    </header>
+
+    <main>
+        <h2>Name and birthday</h2>
+
+        <form id="myform" autocomplete="off">
+
+            <p>
+                <label for="iname">Name:</label>
+                <input type="text" name="name" id="iname" required placeholder="Your name">
+            </p>
+
+            <p>
+                <label for="idate">Date of Birth:</label>
+                <input type="date" name="date" id="idate" placeholder="Date of birth">
+            </p>
+
+            <input type="submit" value="send">
+            <input type="reset" value="clear">
+
+        </form>
+        <p id="result"></p>
+
+        <p>Date does not take into consideration day and month</p>
+
+
+        <hr>
+
+
+        <h2>More Forms</h2>
+
+        <form id="myform2">
+
+            <p>
+                <label for="imonth">Month</label>
+                <input type="month" name="month" id="imonth">
+            </p>
+
+            <p>
+                <label for="inumber">Number</label>
+                <input type="number" name="number" id="inumber" step="0.1">
+            </p>
+
+            <p>
+                <label for="itime">Time</label>
+                <input type="time" name="time" id="itime">
+            </p>
+
+        </form>
+
+        <h2>Email and Tel</h2>
+
+        <form id="myform3" autocomplete="on">
+
+            <p>
+                
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required>
+            
+            </p>
+
+            <p>
+                <label for="itel">Tel:</label>
+                <input type="tel" name="tel" id="itel" required>
+            </p>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

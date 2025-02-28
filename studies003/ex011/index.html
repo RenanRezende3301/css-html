@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="cadastro.js" defer></script>
+</head>
+<body>
+    
+    <header>
+        <h1>FORMS</h1>
+    </header>
+
+    <main>
+        <h2>Output Element</h2>
+
+        <form id="myform" method="post">
+
+           <fieldset>
+
+                <legend>Choose Two Numbers</legend>
+
+
+                <p>
+                    <label for="in1">Number 1:</label>
+                    <input type="number" name="n1" id="in1" min="1" max="10" required oninput="isum.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+
+                <p>
+                    <label for="in2">Number 2:</label>
+                    <input type="number" name="n2" id="in2" min="1" max="10" required  oninput="isum.innerHTML = Number(in1.value) + Number(in2.value)">
+                </p>
+
+                <p>
+                    <label for="isum">Sum: </label>
+                    <output id="isum">0</output>
+                </p>
+
+                <p>
+                    <label for="iscore">Score: </label>
+                    <input type="range" name="score" id="iscore" oninput="val.innerHTML = Number(iscore.value)" min="1" max="10">
+                    <output id="val">5</output>
+                </p>
+
+
+                
+
+           </fieldset>
+
+           <fieldset>
+
+            <legend>Your Age</legend>
+
+            <p>
+                <label for="iage">Year of Birth:</label>
+                <input type="number" name="age" id="iage" oninput="agecal()">
+            </p>
+
+            <p>
+                <label for="yage">Your age is: </label>
+                <output id="yage">??</output>
+            </p>
+
+            <p>
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+            </p>
+
+           </fieldset>
+         
+        </form>
+
+    </main>
+
+    <script>
+        function agecal() {
+            let year = new Date().getFullYear();
+            let iage = document.getElementById("iage");
+            let yage = document.getElementById("yage");
+    
+            if (iage.value.trim() === "") {
+                yage.innerHTML = "??"
+            } else {
+                yage.innerHTML = Number(year) - Number(iage.value);
+            }
+    }
+    </script>
+    
+
+</body>
+</html>

@@ -60,3 +60,15 @@ p {
     font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
+fieldset {
+    border-color: black;
+    margin-bottom: 20px;
+}
+
+legend {
+    text-align: left;
+}
+
+.checks {
+    margin-bottom: 8px;
+}
