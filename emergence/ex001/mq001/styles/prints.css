@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+/*styles for screen */
+
+body {
+    color: rgb(30, 30, 30);
+    font-size: clamp(1em, 1.2em, 2.2em);
+   
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+} 
+
+
+header {
+    
+    margin-top: 5vh;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: black;
+}
+
+menu {
+    display: none;
+}
+
+
+main {
+    background-color: rgba(255, 255, 255, 0.971);
+    margin-top: 3vh; 
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 20px 0px #fcfaff;
+    
+    
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 10px;
+}
