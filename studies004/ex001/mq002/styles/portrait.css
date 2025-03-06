@@ -1,0 +1,21 @@
+#imgtest {
+    width: 50%;
+    height: 50vh;
+    max-height: 350px;
+    background-image: url(../imgs/cev-portrait.jpg);
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-color: rgb(58, 58, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3.titles::after {
+    content: " - Portrait";
+    
+}
+
+h3 {
+    font-size: clamp(0.5em, 1.0em, 1.2em);
+}

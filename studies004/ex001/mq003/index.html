@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts. gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/styles.css" media="all">
+    <link rel="stylesheet" href="styles/portrait.css" media="screen and (orientation: portrait)"> 
+    <link rel="stylesheet" href="styles/landscape.css" media="screen and (orientation: landscape)">
+    <script src="scripts/music.js" defer></script>
+    
+</head>
+<body>
+
+    <!-- Menu and Header Section -->
+    <section id="top">
+        <header>
+            <h1>Media Queries</h1>
+        </header>
+    
+        <menu>
+            <ul>
+                <li onclick="clickbit();""><a href="#">About Us</a></li>
+                <li onclick="clickbit();""><a href="#">Home</a></li>
+                <li onclick="clickbit();""><a href="#">Contact</a></li>
+            </ul>        
+        </menu>
+    </section>
+
+
+    <!--Main Section with all content --> 
+    <main>
+        
+        <h2 id="musict">Enjoy the music</h2>
+
+        <audio id="music" autoplay>
+            <source src="mp3/topg.mp3" type="audio/mp3" loop>
+            Your browser does not support the audio tag ;-;
+        </audio>
+        
+        <button onclick="clickbit();" id="pauseButton">play</button>
+
+        <hr>
+ 
+        <article>
+
+            <h2 id="porra">Testing Queries/Features</h2>
+
+            <h3 class="titles">IMG 1</h3>
+
+            <div id="imgtest">
+                <picture></picture>
+            </div>
+
+        </article>
+    </main>
+
+    <!--Click effect-->
+    <audio id="audio" src="mp3/effec.mp3"></audio>
+
+</body>
+</html>

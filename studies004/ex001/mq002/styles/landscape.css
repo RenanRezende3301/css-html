@@ -1,0 +1,15 @@
+#imgtest {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../imgs/cev-landscape.jpg);
+    background-size: contain;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-color: rgb(58, 58, 255);
+}
+
+h3.titles::after {
+    content: " - Landscape";
+    
+}
+
