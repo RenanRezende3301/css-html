@@ -406,7 +406,7 @@ footer > .menufooter > div > ul > li:hover {
 
 .phone {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     padding-right: 5%;
     margin-bottom: 5%;
