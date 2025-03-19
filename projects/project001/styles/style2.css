@@ -30,7 +30,9 @@ html, body {
 .logo {
     max-width: 180px; 
     height: auto;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
 }
 
 menu {
@@ -48,7 +50,7 @@ menu > ul {
 
 menu > ul > li {
     padding: 0 2vw;
-    font-size: clamp(1rem, 1.2rem, 1.5rem);
+    font-size: clamp(1rem, 1.0rem, 1.5rem);
     
 }
 
@@ -71,7 +73,7 @@ menu a {
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 50%;
+    width: 90%;
     background-color: white;
     border-radius: 25px;
     padding: 0px;
@@ -109,8 +111,8 @@ menu a {
 }
 
 .banner > img {
-    height: 100%;
-    border-radius: 10px;
+    width: 100%;
+  
 }
 
 
@@ -137,15 +139,13 @@ menu a {
 }
 
 .infocamp {
-    width: 22%;
-    min-width: 250px;
+    width: 90%;
     height: auto;
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    border: solid 1px;
-    
+    border: solid 1px;    
 }
 
 .subt {
@@ -173,16 +173,19 @@ menu a {
 
 .boxpag {
     max-width: 300px;
+    text-align: center;
 }
 
 .subt2 {
     font-size: clamp(1.5rem, 2rem, 2.5rem);
     margin-bottom: 10px;
     font-weight: lighter;
+    text-align: center;
 }
 
 .espacador img {
     height: 200px;
+    display: none;
     
 }
 
@@ -336,8 +339,8 @@ menu a {
 
 
 .dica-item > img {
-    width: 150px;
-    height: 150px;
+    max-width: 150px;
+    height: 100%;
     object-fit: cover;
     flex-shrink: 0; 
     border-radius: 10px 0px 0px 10px;
@@ -356,7 +359,7 @@ menu a {
 }
 
 .bannercard > img {
-    width: 80vw;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -374,6 +377,7 @@ footer > .menufooter {
     display: flex;
     background-color: #0c1629;
     gap: 15%;  
+    display: none;
 
 }
 
