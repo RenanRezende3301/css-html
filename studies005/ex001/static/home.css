@@ -1,0 +1,134 @@
+/* --- Estilos específicos da página Home --- */
+
+/* --- Seção de Aviso (Hero) --- */
+section#aviso h2 {
+  color: var(--text-white);
+  text-align: center;
+  margin-top: 6rem;
+  font-size: var(--font-xl);
+}
+
+section#aviso p {
+  color: var(--text-white);
+  text-align: center;
+  margin-top: 2rem;
+  font-size: var(--font-base);
+}
+
+/* --- Botão Principal --- */
+section#aviso .botao {
+  color: black;
+  background-color: var(--interactive-color);
+  padding: 1rem;
+  font-size: var(--font-base);
+  text-decoration: none;
+  font-weight: var(--weight-bold);
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 20px 0px var(--interactive-color);
+  display: inline-block;
+  transition: 0.5s;
+}
+
+section#aviso .botao:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+section#aviso .caixa-botao {
+  margin-top: 5rem;
+}
+
+/* --- Seção de Planos --- */
+section#Planos {
+  display: flex;
+  gap: 4rem;
+  margin-top: 15rem;
+  justify-content: center;
+}
+
+/* --- Cards de Planos --- */
+section#Planos h3 {
+  font-size: var(--font-lg);
+}
+
+section#Planos div {
+  padding: 2rem;
+  width: 20vw;
+  min-height: 60vh;
+  border-radius: 0.5rem;
+  background-color: var(--card-bg);
+  color: var(--text-white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+/* --- Destaque do Plano Pleno --- */
+section#Planos div#Pleno {
+  box-shadow: 0px 0px 15px 0px var(--interactive-color);
+  border: 2px solid var(--interactive-color);
+}
+
+section#Planos div p {
+  margin-bottom: 2rem;
+}
+
+/* --- Descrição e Preço nos Cards --- */
+section#Planos div .descricao {
+  font-size: var(--font-sm);
+  margin-top: auto;
+}
+
+section#Planos div .preco {
+  font-size: var(--font-md);
+  margin-top: auto;
+}
+
+/* --- Botão de Comprar --- */
+section#Planos div .comprar {
+  color: black;
+  background-color: var(--interactive-color);
+  padding: 1rem;
+  font-size: var(--font-base);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  border: 2px solid var(--interactive-color);
+  box-shadow: 0px 0px 15px 0px var(--btn-shadow);
+  display: inline-block;
+  transition: 0.5s;
+}
+
+section#Planos div .comprar:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/* --- Media Queries (Responsividade) --- */
+@media (max-width: 768px) {
+  section#aviso h2 {
+    margin-top: 3rem;
+  }
+
+  section#aviso .caixa-botao {
+    margin-top: 3rem;
+  }
+
+  section#Planos {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+  }
+
+  section#Planos div {
+    width: 90vw;
+    height: auto;
+    min-height: 40vh;
+    padding: 2rem 1.5rem;
+  }
+
+  section#Planos div .descricao {
+    margin-bottom: 2rem;
+  }
+}

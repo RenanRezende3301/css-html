@@ -1,0 +1,134 @@
+:root {
+  /* --- Cores --- */
+  --bg-color: rgba(15, 15, 15, 0.89);
+  --text-white: #ffffff;
+  --accent-color: #27a32d;
+  --interactive-color: #49ee51;
+  --btn-shadow: #14991a;
+  --header-bg: rgba(184, 184, 184, 0.062);
+  --header-border: rgba(184, 184, 184, 0.13);
+  --card-bg: rgb(56, 56, 56);
+
+  /* --- Estilos de Fonte --- */
+  --font-main: Arial, sans-serif;
+
+  /* --- Tamanhos de Fonte --- */
+  --font-xl: 5rem;
+  /* Títulos Hero */
+  --font-lg: 3rem;
+  /* Títulos e Logo */
+  --font-md: 1.5rem;
+  /* Subtítulos e Títulos menores */
+  --font-base: 1rem;
+  /* Texto padrão */
+  --font-sm: 1.2rem;
+  /* Texto de descrição */
+
+  /* --- Pesos de Fonte --- */
+  --weight-bold: bold;
+  --weight-normal: normal;
+}
+
+/* --- Reset e Configurações Gerais --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: url(images/back2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  font-family: var(--font-main);
+}
+
+/* --- Cabeçalho (Header) --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  padding-right: 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--header-bg);
+  border: 1px solid var(--header-border);
+}
+
+/* --- Logo --- */
+header h1 {
+  font-size: var(--font-lg);
+  color: var(--text-white);
+  font-weight: var(--weight-bold);
+  font-family: var(--font-main);
+}
+
+header h1 span {
+  color: var(--accent-color);
+}
+
+/* --- Menu de Navegação --- */
+header menu ul {
+  display: flex;
+  gap: 3rem;
+  margin-top: 1rem;
+  list-style: none;
+}
+
+header menu ul li a {
+  font-size: var(--font-md);
+  color: var(--text-white);
+  font-family: var(--font-main);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+header menu ul li a:hover {
+  color: var(--interactive-color);
+  text-shadow: 0px 0px 10px var(--interactive-color);
+}
+
+/* --- Rodapé (Footer) --- */
+footer {
+  margin-top: 15rem;
+  color: var(--text-white);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+/* --- Media Queries (Responsividade) --- */
+@media (max-width: 768px) {
+  :root {
+    --font-xl: 3rem;
+    /* Título menor no celular */
+    --font-lg: 2.2rem;
+    /* Logo e títulos menores */
+    --font-md: 1.2rem;
+    --font-base: 0.9rem;
+    --font-sm: 1rem;
+  }
+
+  header {
+    width: 95vw;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  header menu ul {
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  footer {
+    margin-top: 5rem;
+  }
+}
